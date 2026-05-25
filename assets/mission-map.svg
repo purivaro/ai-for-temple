@@ -1,0 +1,23 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI mission map for temple work</title>
+  <desc id="desc">Two mission paths: Japanese meditation retreat and stupa fundraising, both supported by AI workflows.</desc>
+  <rect width="960" height="720" rx="20" fill="#F6F0E3"/>
+  <path d="M102 108C207 47 334 54 421 135C517 224 604 219 735 178C831 148 897 181 919 226V720H0V185C22 159 56 135 102 108Z" fill="#E8D5B2"/>
+  <path d="M0 440C88 388 161 388 259 434C348 476 418 476 507 429C618 371 720 369 960 456V720H0V440Z" fill="#D6E0C1"/>
+  <path d="M540 184C596 222 621 286 606 355C589 435 520 488 444 479C354 468 302 391 322 306C344 209 454 126 540 184Z" fill="#F4BE52" opacity=".82"/>
+  <path d="M481 112C513 151 529 198 529 254C529 309 510 357 480 398C449 357 432 309 432 254C432 198 449 151 481 112Z" fill="#7A8D55"/>
+  <path d="M480 100L497 155L480 208L463 155L480 100Z" fill="#A24F36"/>
+  <rect x="140" y="425" width="248" height="128" rx="12" fill="#FFFBF1" stroke="#B99B5F" stroke-width="3"/>
+  <rect x="572" y="425" width="248" height="128" rx="12" fill="#FFFBF1" stroke="#B99B5F" stroke-width="3"/>
+  <path d="M188 471H340M188 507H300" stroke="#3B3A25" stroke-width="12" stroke-linecap="round"/>
+  <path d="M620 471H772M620 507H728" stroke="#3B3A25" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="264" cy="315" r="74" fill="#314F3A"/>
+  <circle cx="696" cy="315" r="74" fill="#623E54"/>
+  <path d="M225 326C241 300 284 299 303 326" stroke="#F6F0E3" stroke-width="12" stroke-linecap="round"/>
+  <path d="M664 345V312L696 286L728 312V345" stroke="#F6F0E3" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M392 316H568" stroke="#3B3A25" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 22"/>
+  <circle cx="480" cy="316" r="34" fill="#3B3A25"/>
+  <path d="M462 318H498M480 300V336" stroke="#F6F0E3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M161 608C260 578 367 580 463 618C564 658 677 660 801 612" stroke="#A86C2B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M185 635C282 608 366 613 455 646C563 686 670 681 783 639" stroke="#314F3A" stroke-width="10" stroke-linecap="round" opacity=".72"/>
+</svg>

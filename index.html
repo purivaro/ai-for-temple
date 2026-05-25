@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Playbook สำหรับงานวัด</title>
+    <meta
+      name="description"
+      content="คู่มือภายในสำหรับใช้ AI ช่วยงานปฏิบัติธรรมชาวญี่ปุ่นและระดมทุนสร้างเจดีย์"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23f0bd50'/%3E%3Cpath d='M32 13c8 9 12 18 12 27 0 9-5 14-12 14s-12-5-12-14c0-9 4-18 12-27Z' fill='%233b3a25'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="กลับไปหน้าแรก">
+        <span class="brand-mark">AI</span>
+        <span>
+          <strong>Temple Playbook</strong>
+          <small>คู่มือ AI สำหรับภารกิจวัด</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="#missions">ภารกิจ</a>
+        <a href="#ai-basics">เริ่มต้น AI</a>
+        <a href="#roles">บทบาท</a>
+        <a href="#data-insights">ข้อมูลจริง</a>
+        <a href="#weekly">งานประจำสัปดาห์</a>
+        <a href="#prompts">Prompt Library</a>
+        <a href="#care">ใช้อย่างมีสติ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">ใช้ภายในวัดก่อน เริ่มจากงานจริง ไม่เริ่มจากศัพท์เทคนิค</p>
+          <h1>ใช้ AI ช่วยขับเคลื่อน 2 ภารกิจสำคัญของวัด</h1>
+          <p class="lead">
+            คู่มือสำหรับพระและเจ้าหน้าที่ เพื่อใช้ AI ช่วยเพิ่มผู้เข้าปฏิบัติธรรมชาวญี่ปุ่น
+            และสื่อสารงานระดมทุนสร้างเจดีย์ให้ต่อเนื่อง เป็นระบบ และน่าเชื่อถือ
+          </p>
+          <div class="hero-actions" aria-label="ทางลัด">
+            <a class="button primary" href="#prompts">เปิดคลัง Prompt</a>
+            <a class="button secondary" href="#data-insights">ดู insight จากข้อมูลจริง</a>
+            <a class="button secondary" href="#weekly">ดู workflow รายสัปดาห์</a>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-label="ภาพรวม 2 ภารกิจ">
+          <img src="assets/mission-map.svg" alt="แผนภาพภารกิจ AI สำหรับงานวัด" />
+        </figure>
+      </section>
+
+      <section class="mission-strip" aria-label="ตัวเลขภารกิจ">
+        <article>
+          <span>ปฏิบัติธรรมญี่ปุ่น</span>
+          <strong>เป้าหมาย 30 คน/สัปดาห์</strong>
+          <p>บางสัปดาห์ต่ำกว่า 10 คน จึงต้องช่วยทั้งหาคนใหม่ ชวนคนเก่า และติดตามหลังจบคอร์ส</p>
+        </article>
+        <article>
+          <span>สร้างเจดีย์</span>
+          <strong>ต้องระดมทุนเพิ่ม 30 ล้านบาท</strong>
+          <p>สื่อสารต่อเนื่อง 12 เดือน พร้อมงานบุญใหญ่เป็นช่วง ๆ เช่น ทอดผ้าป่าเดือนหน้า</p>
+        </article>
+      </section>
+
+      <section class="section data-insights" id="data-insights">
+        <div class="section-heading">
+          <p class="eyebrow">Insight จากข้อมูลจริง</p>
+          <h2>ข้อมูลบอกว่าทีมควรเริ่มดูแลใครก่อน</h2>
+        </div>
+
+        <div class="data-summary">
+          <article>
+            <span>ข้อมูลทั้งหมด</span>
+            <strong>195 คน</strong>
+            <p>มี Japanese 138 คน จากข้อมูลผู้เข้าร่วมช่วง 2025-05-01 ถึง 2026-05-25</p>
+          </article>
+          <article>
+            <span>Japanese ที่มา 1 ครั้ง</span>
+            <strong>45 คน</strong>
+            <p>กลุ่มนี้ควรทำ second-visit follow-up ให้กลับมาครั้งที่ 2 ภายใน 2-4 สัปดาห์</p>
+          </article>
+          <article>
+            <span>เคยมาซ้ำแต่หายไป</span>
+            <strong>33 คน</strong>
+            <p>กลุ่มนี้รู้จักวัดแล้ว เหมาะกับ reactivation campaign แบบอบอุ่น ไม่กดดัน</p>
+          </article>
+          <article>
+            <span>Core active</span>
+            <strong>16 คน</strong>
+            <p>กลุ่มนี้ควรชวนช่วยบอกต่อ ขอ testimonial หรือส่งข้อความชวนเพื่อน</p>
+          </article>
+        </div>
+
+        <div class="insight-layout">
+          <div class="insight-copy">
+            <h3>สิ่งที่ข้อมูลรีวิวสะท้อน</h3>
+            <p>
+              คำที่พบเด่นมากคือ “สบาย”, “ความสุข”, “นิ่ง”, “ธรรมชาติ”, “สวน” และ “เสียง”
+              แปลว่าการสื่อสารกับคนญี่ปุ่นควรเน้นความสงบ ความสบาย บรรยากาศธรรมชาติ
+              และการเริ่มต้นได้โดยไม่ต้องกดดันตัวเอง
+            </p>
+            <ul class="check-list">
+              <li>หน้าเว็บคอร์สควรตอบความกังวลเรื่องมือใหม่ ภาษา การพักค้าง อาหาร และการนั่งนาน</li>
+              <li>ข้อความชวนคนเก่าควรใช้ภาพจำเรื่องบรรยากาศสงบและการกลับมาพักใจ</li>
+              <li>หลังจบคอร์สควรส่งแบบฝึก 5 นาทีที่บ้าน เพื่อเชื่อมจากประสบการณ์วัดไปสู่ชีวิตประจำวัน</li>
+              <li>ควรเก็บข้อมูล “รู้จักกิจกรรมจากช่องทางใด” ให้ครบขึ้น เพราะข้อมูลช่องทางยังน้อย</li>
+            </ul>
+          </div>
+
+          <div class="keyword-panel" aria-label="คำสำคัญจากรีวิว">
+            <span>Keyword ที่ควรใช้ในการสื่อสาร</span>
+            <div class="keyword-cloud">
+              <b>สบาย</b>
+              <b>ความสุข</b>
+              <b>นิ่ง</b>
+              <b>ธรรมชาติ</b>
+              <b>สวน</b>
+              <b>เสียง</b>
+              <b>ฝึกต่อที่บ้าน</b>
+              <b>ไม่คาดหวัง</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="segment-table" aria-label="กลุ่มผู้เข้าร่วมที่ควรดูแล">
+          <div class="segment-row segment-head">
+            <span>กลุ่ม</span>
+            <span>จำนวน</span>
+            <span>งานที่ควรทำ</span>
+          </div>
+          <div class="segment-row">
+            <span>One-time Japanese</span>
+            <strong>45</strong>
+            <p>ส่งข้อความวันที่ 1, 7, 14, 30 เพื่อชวนกลับมาครั้งที่ 2 และให้แบบฝึกสั้น ๆ</p>
+          </div>
+          <div class="segment-row">
+            <span>Lapsed Repeat Japanese</span>
+            <strong>33</strong>
+            <p>ทำแคมเปญ “กลับมาพักใจที่วัดอีกครั้ง” โดยไม่ทำให้รู้สึกผิดที่หายไป</p>
+          </div>
+          <div class="segment-row">
+            <span>New Recent Japanese</span>
+            <strong>22</strong>
+            <p>ดูแลให้ฝึกต่อเนื่อง ชวนคอร์สรอบถัดไปภายใน 2-4 สัปดาห์</p>
+          </div>
+          <div class="segment-row">
+            <span>Core Active Japanese</span>
+            <strong>16</strong>
+            <p>ขอ feedback, testimonial แบบไม่ระบุตัวตน และข้อความส่งต่อให้เพื่อน</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="missions">
+        <div class="section-heading">
+          <p class="eyebrow">ภารกิจหลัก</p>
+          <h2>AI ช่วยตรงไหนบ้าง</h2>
+        </div>
+        <div class="mission-grid">
+          <article class="mission-card">
+            <div class="mission-index">01</div>
+            <h3>จัดปฏิบัติธรรมชาวญี่ปุ่นทุกสัปดาห์</h3>
+            <p>
+              เปลี่ยนจากการโปรโมตเฉพาะหน้า เป็นระบบดูแลทั้งเส้นทาง:
+              เห็นกิจกรรม สมัคร มาที่วัด ประทับใจ ฝึกต่อ กลับมาอีก และชวนเพื่อน
+            </p>
+            <ul class="check-list">
+              <li>เขียนสื่อญี่ปุ่นสำหรับเว็บไซต์ Instagram Facebook LINE</li>
+              <li>แบ่งกลุ่มคนเก่าจากฐานข้อมูลและชวนกลับมาอย่างสุภาพ</li>
+              <li>ทำ FAQ ลดความกังวลของคนที่ไม่เคยมาวัดไทย</li>
+              <li>สร้างข้อความ follow-up หลังจบคอร์ส 1, 3, 7, 14, 30 วัน</li>
+            </ul>
+          </article>
+
+          <article class="mission-card">
+            <div class="mission-index">02</div>
+            <h3>ระดมทุนสร้างเจดีย์ให้สำเร็จใน 1 ปี</h3>
+            <p>
+              เปลี่ยนจาก “หาเงินเรื่อย ๆ” เป็นแคมเปญที่มีเรื่องเล่า จังหวะการสื่อสาร
+              รายงานความคืบหน้า และคำอนุโมทนาที่ดูแลศรัทธาของญาติโยม
+            </p>
+            <ul class="check-list">
+              <li>เขียนเรื่องเล่าหลักของเจดีย์แบบสั้น กลาง ยาว</li>
+              <li>วางแผนสื่อสาร 12 เดือนและโพสต์รายสัปดาห์</li>
+              <li>เตรียมแคมเปญทอดผ้าป่า 4 สัปดาห์ก่อนงาน</li>
+              <li>ทำรายงานความคืบหน้าและข้อความขอบคุณผู้ร่วมบุญ</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section method">
+        <div class="section-heading">
+          <p class="eyebrow">วิธีใช้ AI แบบง่าย</p>
+          <h2>สูตร prompt ที่คนในวัดใช้ร่วมกันได้</h2>
+        </div>
+        <div class="formula">
+          <span>บทบาท</span>
+          <span>งานที่ให้ช่วย</span>
+          <span>บริบทวัด</span>
+          <span>รูปแบบผลลัพธ์</span>
+          <span>น้ำเสียงและข้อควรระวัง</span>
+        </div>
+        <div class="example-box">
+          <p>ตัวอย่าง</p>
+          <pre><code>คุณคือผู้ช่วยงานวัดไทยในญี่ปุ่น
+ช่วยวางแผนหาผู้เข้าร่วมคอร์สปฏิบัติธรรมชาวญี่ปุ่นสุดสัปดาห์นี้
+เป้าหมายคือ 30 คน แต่บางสัปดาห์มีผู้เข้าร่วมน้อยกว่า 10 คน
+ขอเป็นแผน 7 วัน พร้อมข้อความภาษาญี่ปุ่นสำหรับคนใหม่และคนเก่า
+น้ำเสียงสุภาพ อบอุ่น ไม่กดดัน</code></pre>
+        </div>
+      </section>
+
+      <section class="section ai-basics" id="ai-basics">
+        <div class="section-heading">
+          <p class="eyebrow">สำหรับผู้เริ่มต้น</p>
+          <h2>เริ่มใช้ AI จากงานวัดที่ทำอยู่ทุกวัน</h2>
+        </div>
+
+        <div class="basics-layout">
+          <article class="basics-lead">
+            <h3>AI ไม่ใช่คนตัดสินแทนเรา แต่เป็นผู้ช่วยงาน</h3>
+            <p>
+              ให้คิดว่า AI เป็นผู้ช่วยร่าง ผู้ช่วยสรุป ผู้ช่วยจัดระบบ ผู้ช่วยแปล
+              และผู้ช่วยเสนอทางเลือก คนในวัดยังเป็นผู้ดูแลความถูกต้อง ความเหมาะสม
+              และความเมตตาของงานทุกชิ้น
+            </p>
+          </article>
+
+          <div class="basics-grid">
+            <article>
+              <span>01</span>
+              <h3>เริ่มจากงานเล็ก</h3>
+              <p>ให้ AI ช่วยสรุปข้อความ LINE, ทำตารางงาน, เขียนประกาศสั้น หรือแปลข้อความง่าย ๆ ก่อน</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>บอกบริบทให้ชัด</h3>
+              <p>บอกว่าเป็นวัดไทยในญี่ปุ่น ผู้รับสารเป็นใคร งานนี้ต้องสุภาพ อบอุ่น หรือเป็นทางการแค่ไหน</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>ขอรูปแบบผลลัพธ์</h3>
+              <p>ระบุเลยว่าอยากได้เป็นตาราง รายการ checklist ข้อความ LINE โพสต์ Facebook หรือภาษาญี่ปุ่น</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>ถามต่อให้ดีขึ้น</h3>
+              <p>ถ้ายังไม่ดี ให้ขอปรับ เช่น “สั้นลง”, “อ่อนโยนขึ้น”, “ทำเป็น 3 เวอร์ชัน”, “เพิ่ม FAQ”</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="beginner-recipes">
+          <h3>คำสั่งถามต่อที่ใช้บ่อย</h3>
+          <div class="recipe-grid">
+            <button class="mini-copy" type="button" data-copy="ช่วยทำให้สั้นลง เหมาะสำหรับส่งใน LINE และยังคงน้ำเสียงสุภาพอบอุ่น">ทำให้สั้นลง</button>
+            <button class="mini-copy" type="button" data-copy="ช่วยปรับข้อความนี้ให้อ่อนโยนขึ้น ไม่กดดัน และเหมาะกับคนที่ยังลังเล">ทำให้อ่อนโยนขึ้น</button>
+            <button class="mini-copy" type="button" data-copy="ช่วยทำเป็นตาราง แยกเป็น งาน / ผู้รับผิดชอบ / กำหนดเสร็จ / สิ่งที่ต้องถามเพิ่ม">ทำเป็นตาราง</button>
+            <button class="mini-copy" type="button" data-copy="ช่วยเสนอ 3 เวอร์ชัน: สั้น กลาง และทางการ พร้อมบอกว่าแต่ละเวอร์ชันเหมาะกับช่องทางไหน">ขอ 3 เวอร์ชัน</button>
+            <button class="mini-copy" type="button" data-copy="ช่วยตรวจว่าข้อความนี้มีจุดไหนที่อาจฟังดูกดดัน ไม่เป็นธรรมชาติ หรือควรให้ผู้รู้ตรวจทานก่อนใช้จริง">ตรวจความเหมาะสม</button>
+          </div>
+        </div>
+
+        <div class="basics-warning">
+          <h3>กฎง่าย ๆ ก่อนส่งงานจริง</h3>
+          <ul class="check-list">
+            <li>อ่านข้อความของ AI อีกครั้งเสมอ โดยเฉพาะภาษาญี่ปุ่นและเนื้อหาธรรมะ</li>
+            <li>อย่าใส่ชื่อ เบอร์โทร อีเมล หรือเรื่องส่วนตัวละเอียดอ่อนลงไปถ้าไม่จำเป็น</li>
+            <li>ถ้าเป็นข้อความถึงญาติโยม ให้ตรวจว่าน้ำเสียงไม่กดดันและไม่ขายของ</li>
+            <li>ให้ AI เสนอทางเลือกได้ แต่คนในวัดเป็นผู้ตัดสินใจขั้นสุดท้าย</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section roles" id="roles">
+        <div class="section-heading">
+          <p class="eyebrow">AI ตามบทบาทหน้าที่</p>
+          <h2>แต่ละฝ่ายใช้ AI ต่างกัน แต่ต้องเห็นภาพงานเดียวกัน</h2>
+        </div>
+
+        <div class="role-intro">
+          <article>
+            <h3>1. งานวัดทั่วไป</h3>
+            <p>ใช้ AI ช่วยลดงานซ้ำ จัดระบบ สรุปข้อมูล ทำ checklist และเตรียมข้อความให้แต่ละฝ่ายทำงานเร็วขึ้น</p>
+          </article>
+          <article>
+            <h3>2. งานภารกิจหลัก</h3>
+            <p>ใช้บทบาทเดิมช่วย 2 ภารกิจ: จัดปฏิบัติธรรมชาวญี่ปุ่นทุกสัปดาห์ และระดมทุนสร้างเจดีย์ให้สำเร็จ</p>
+          </article>
+        </div>
+
+        <div class="role-grid">
+          <article class="role-card">
+            <span>นโยบาย</span>
+            <h3>เจ้าอาวาส</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ให้ทิศทาง เป้าหมาย หลักคิด และกรอบการใช้ AI อย่างเหมาะสมกับงานวัด</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>กำหนดเป้าหมายผู้ปฏิบัติธรรม 30 คน/สัปดาห์ และกรอบเรื่องเล่าเจดีย์ 30 ล้านบาทใน 1 ปี</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>บริหาร</span>
+            <h3>ผู้ช่วยเจ้าอาวาส</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ใช้ AI สรุปงาน ติดตามผู้รับผิดชอบ ทำรายงานสถานะ และมองจุดติดขัดของทีม</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ดู dashboard รายสัปดาห์ แยกคนเก่า/คนใหม่ ติดตามแผนสื่อและแคมเปญเจดีย์</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>เลขา</span>
+            <h3>ฝ่ายเลขา</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>สรุปประชุม ทำ minutes, action items, รายงาน, ตารางรถ, จองรถ และจัดสรรที่พัก</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ทำ run sheet คอร์สญี่ปุ่น รายชื่อห้องพัก รายชื่อรถรับส่ง และรายงานผลประชุมงานเจดีย์</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>ทะเบียน</span>
+            <h3>ฝ่ายทะเบียน</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ดูข้อมูลผู้มาปฏิบัติธรรม ลงทะเบียน เข้าที่พัก รับกุญแจห้อง และความครบถ้วนของข้อมูล</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>แบ่ง segment ผู้เข้าร่วม ทำรายชื่อ check-in/check-out และส่งข้อมูลที่ไม่ระบุตัวตนให้ทีมวิเคราะห์</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>ธรรมะ</span>
+            <h3>พระอาจารย์เทศน์สอนอบรม</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ให้ AI ช่วยเตรียมโครงธรรมะ ตัวอย่าง คำอธิบายง่าย ๆ และคำถามทบทวน</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>เตรียมบทสอนภาษาญี่ปุ่นอย่างระวังศัพท์ธรรมะ และคัดประเด็นจาก feedback มาปรับการสอน</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>สื่อ</span>
+            <h3>ฝ่ายทำสื่อประชาสัมพันธ์</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ร่างโพสต์ LINE/Facebook/Instagram, headline, script คลิป และข้อความโปสเตอร์</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ทำ content calendar คอร์สญี่ปุ่น และสื่อสารเจดีย์รายสัปดาห์จากความคืบหน้า/เรื่องเล่าหลัก</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>อาสา</span>
+            <h3>ฝ่ายดูแลอาสาสมัคร</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>จัดเวร ทำคู่มืออาสาใหม่ เขียนข้อความขอบคุณ และติดตามความต่อเนื่อง</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>เตรียมอาสารับคนญี่ปุ่น ดูแล check-in แปลเบื้องต้น และอาสาช่วยงานทอดผ้าป่า/เจดีย์</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>การเงิน</span>
+            <h3>ฝ่ายการเงิน</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>สรุปรายรับรายจ่าย เตรียมรายงาน ทำคำอธิบายตัวเลขให้อ่านง่าย และ checklist เอกสาร</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ทำรายงานยอดเจดีย์แบบโปร่งใส แยกเป้าหมายที่เหลือ และข้อความอนุโมทนาผู้ร่วมบุญ</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>สถานที่</span>
+            <h3>ฝ่ายดูแลสถานที่ งานช่าง</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ทำ checklist ซ่อมบำรุง แผนงานช่าง รายการวัสดุ และตารางตรวจพื้นที่</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>เตรียมห้องพัก ห้องปฏิบัติธรรม ป้ายภาษาญี่ปุ่น จุดรับส่ง และอัปเดตงานก่อสร้างเจดีย์เป็นภาษาง่าย</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>ครัว</span>
+            <h3>ฝ่ายครัว</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>วางเมนู คำนวณวัตถุดิบ ทำตารางครัว และ checklist แพ้อาหาร/ข้อจำกัดอาหาร</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>เตรียมเมนูสำหรับผู้ปฏิบัติธรรมญี่ปุ่น และแผนครัวสำหรับงานบุญใหญ่ที่มีญาติโยมจำนวนมาก</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>เวที</span>
+            <h3>ฝ่ายพิธีกร</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ร่าง script เปิดงาน ปิดงาน แนะนำกิจกรรม และคำกล่าวเชื่อมช่วงต่าง ๆ</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ทำคำกล่าวต้อนรับภาษาญี่ปุ่น และ script งานทอดผ้าป่าที่สุภาพ อบอุ่น ไม่กดดัน</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>พิธีกรรม</span>
+            <h3>ฝ่ายพิธีกรรม</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>ออกแบบลำดับพิธี งานบุญ ตารางเวลา สิ่งของที่ต้องเตรียม และคำอธิบายพิธีให้เข้าใจง่าย</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ออกแบบพิธีในคอร์สญี่ปุ่นให้ไม่ทำให้คนใหม่รู้สึกเกร็ง และออกแบบรูปแบบงานบุญเจดีย์ให้มีความหมาย</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>รถ</span>
+            <h3>สารถีและฝ่ายรถ</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>จัดตารางรถ คนขับ เส้นทาง จุดรับส่ง เวลาเดินทาง และ checklist ความพร้อมของรถ</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>วางแผนรับส่งผู้ปฏิบัติธรรมจากสถานี/สนามบิน และจัดรถสำหรับเจ้าภาพหรือผู้ร่วมงานบุญ</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>เจ้าภาพ</span>
+            <h3>ฝ่ายดูแลเจ้าภาพ</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>จัดข้อมูลเจ้าภาพ ข้อความต้อนรับ ข้อความขอบคุณ และการติดตามหลังงาน</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ดูแลเจ้าภาพงานเจดีย์ ทำข้อความอนุโมทนา รายงานความคืบหน้า และคำเชิญร่วมงานต่อเนื่อง</dd>
+            </dl>
+          </article>
+
+          <article class="role-card">
+            <span>แคมเปญ</span>
+            <h3>ฝ่ายระดมทุน คิดแคมเปญ</h3>
+            <dl>
+              <dt>งานทั่วไป</dt>
+              <dd>วาง concept งานบุญ ทำแผนสื่อสาร กลุ่มเป้าหมาย และข้อความเชิญชวนที่ไม่กดดัน</dd>
+              <dt>งานภารกิจ</dt>
+              <dd>ทำแคมเปญเจดีย์ 12 เดือน แคมเปญทอดผ้าป่า 4 สัปดาห์ และรายงานผลหลังจบงานใหญ่</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section weekly" id="weekly">
+        <div class="section-heading">
+          <p class="eyebrow">งานประจำสัปดาห์</p>
+          <h2>ทำให้ AI กลายเป็นจังหวะงาน ไม่ใช่ลองเล่นครั้งเดียว</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>จันทร์</span>
+            <h3>ดูฐานข้อมูลและแบ่งกลุ่ม</h3>
+            <p>คนใหม่, คนเก่าที่หายไป, คนมาสม่ำเสมอ, คนที่น่าจะชวนเพื่อนได้</p>
+          </article>
+          <article>
+            <span>อังคาร</span>
+            <h3>เขียนข้อความชวนกลับมา</h3>
+            <p>ให้ AI ร่างข้อความญี่ปุ่นหลายโทน แล้วให้ผู้รู้ช่วยตรวจเฉพาะข้อความที่จะใช้จริง</p>
+          </article>
+          <article>
+            <span>พุธ</span>
+            <h3>ปล่อยสื่อหาคนใหม่</h3>
+            <p>ทำโพสต์แยกตามช่องทาง: เว็บไซต์, Instagram, Facebook, LINE และข้อความให้คนเก่าชวนเพื่อน</p>
+          </article>
+          <article>
+            <span>พฤหัส</span>
+            <h3>ส่งคู่มือเตรียมตัว</h3>
+            <p>ลดความกังวลเรื่องภาษา ศาสนา อาหาร การพักค้าง และมารยาทในวัดไทย</p>
+          </article>
+          <article>
+            <span>ศุกร์-อาทิตย์</span>
+            <h3>ดูแลประสบการณ์หน้างาน</h3>
+            <p>ใช้ script ต้อนรับ คำอธิบายพิธีกรรม และแบบ feedback ที่เตรียมไว้</p>
+          </article>
+          <article>
+            <span>หลังจบ</span>
+            <h3>ขอบคุณและติดตามต่อ</h3>
+            <p>ส่งข้อความวันที่ 1, 3, 7, 14, 30 พร้อมแบบฝึกสมาธิสั้น ๆ และคำชวนกลับมา</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section fund-flow">
+        <div class="section-heading">
+          <p class="eyebrow">จังหวะระดมทุน</p>
+          <h2>สื่อสารเจดีย์แบบต่อเนื่องและมีงานใหญ่เป็นช่วง ๆ</h2>
+        </div>
+        <div class="fund-layout">
+          <div class="fund-copy">
+            <p>
+              เป้าหมายคือระดมทุนเพิ่ม 30 ล้านบาทใน 1 ปี จึงควรมีทั้งการเล่าเรื่องระยะยาว
+              และแคมเปญเฉพาะช่วง เช่น ทอดผ้าป่าเดือนหน้า
+            </p>
+            <ol class="steps">
+              <li><strong>ทุกเดือน:</strong> ธีมหลัก รายงานความคืบหน้า และแผนโพสต์ 4 ชุด</li>
+              <li><strong>ทุกสัปดาห์:</strong> เล่าเรื่อง เชิญร่วมบุญ อัปเดตงาน และอนุโมทนา</li>
+              <li><strong>ก่อนงานใหญ่:</strong> ทำ countdown 4 สัปดาห์ พร้อมข้อความชวนและ FAQ</li>
+              <li><strong>หลังงานใหญ่:</strong> รายงานผล อนุโมทนา และบอกขั้นต่อไปอย่างโปร่งใส</li>
+            </ol>
+          </div>
+          <div class="progress-panel" aria-label="เป้าหมายระดมทุน">
+            <span>เป้าหมายที่ต้องหาเพิ่ม</span>
+            <strong>30 ล้านบาท</strong>
+            <div class="progress-track"><span style="width: 40%"></span></div>
+            <p>ใช้ตัวเลขจริงอัปเดตในเว็บหรือรายงานรายเดือน เพื่อให้ทีมเห็นจังหวะงานเดียวกัน</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prompts" id="prompts">
+        <div class="section-heading">
+          <p class="eyebrow">Prompt Library</p>
+          <h2>เลือกงาน แล้วคัดลอกไปใช้ได้ทันที</h2>
+        </div>
+
+        <div class="prompt-controls" role="tablist" aria-label="เลือกหมวด prompt">
+          <button class="filter-button active" type="button" data-filter="all">ทั้งหมด</button>
+          <button class="filter-button" type="button" data-filter="retreat">ปฏิบัติธรรมญี่ปุ่น</button>
+          <button class="filter-button" type="button" data-filter="data">วิเคราะห์ข้อมูล</button>
+          <button class="filter-button" type="button" data-filter="role">ตามบทบาท</button>
+          <button class="filter-button" type="button" data-filter="stupa">เจดีย์</button>
+          <button class="filter-button" type="button" data-filter="ops">บริหารงาน</button>
+        </div>
+
+        <div class="prompt-grid" id="promptGrid">
+          <article class="prompt-card" data-category="role">
+            <div class="prompt-meta">ตามบทบาท · งานประจำสัปดาห์</div>
+            <h3>ทำ checklist ตามฝ่าย</h3>
+            <pre><code>คุณคือผู้ช่วยบริหารงานวัดไทยในญี่ปุ่น
+ช่วยทำ checklist งานประจำสัปดาห์สำหรับบทบาทนี้:
+[ใส่บทบาท เช่น ฝ่ายเลขา / ฝ่ายทะเบียน / ฝ่ายครัว / ฝ่ายรถ]
+
+ขอผลลัพธ์เป็นตาราง:
+1. งานที่ต้องทำ
+2. ข้อมูลที่ต้องเตรียม
+3. คนที่ต้องประสาน
+4. กำหนดเวลา
+5. จุดเสี่ยงที่ต้องระวัง
+6. สิ่งที่ควรส่งต่อให้ฝ่ายอื่น
+
+บริบทเพิ่มเติม:
+[ใส่บริบทงานหรือกิจกรรมที่จะเกิดขึ้น]</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="role">
+            <div class="prompt-meta">ตามบทบาท · 2 ภารกิจหลัก</div>
+            <h3>บทบาทนี้ช่วยภารกิจอะไรได้บ้าง</h3>
+            <pre><code>ช่วยวิเคราะห์ว่าบทบาทต่อไปนี้ควรใช้ AI ช่วยงานอะไรบ้าง
+บทบาท: [ใส่บทบาท]
+
+แบ่งคำตอบเป็น 2 ส่วน:
+1. งานวัดทั่วไปที่บทบาทนี้ทำอยู่
+2. งานภารกิจหลัก:
+   2.1 จัดปฏิบัติธรรมชาวญี่ปุ่นทุกสัปดาห์
+   2.2 ระดมทุนสร้างเจดีย์ให้สำเร็จ
+
+สำหรับแต่ละส่วน ขอ:
+- งานที่ AI ช่วยได้ทันที
+- prompt ตัวอย่าง
+- ข้อมูลที่ต้องเตรียม
+- สิ่งที่ต้องให้คนตรวจทานก่อนใช้จริง</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="role">
+            <div class="prompt-meta">ตามบทบาท · เลขา/ทะเบียน</div>
+            <h3>ประชุม รถ ที่พัก และลงทะเบียน</h3>
+            <pre><code>คุณคือผู้ช่วยฝ่ายเลขาและทะเบียนของวัด
+ช่วยจัดระบบข้อมูลสำหรับกิจกรรมปฏิบัติธรรมสุดสัปดาห์
+
+ข้อมูลที่มี:
+- รายชื่อผู้สมัคร
+- เวลาเดินทาง
+- ห้องพัก
+- การรับกุญแจ
+- รถรับส่ง
+- ผู้รับผิดชอบแต่ละจุด
+
+ขอผลลัพธ์เป็น:
+1. ตาราง check-in/check-out
+2. ตารางจัดห้องพัก
+3. ตารางรถรับส่ง
+4. รายการคำถามที่ข้อมูลยังไม่ครบ
+5. ข้อความแจ้งผู้เข้าร่วมแบบสุภาพ
+6. checklist สำหรับทีมงานหน้างาน</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="data">
+            <div class="prompt-meta">วิเคราะห์ข้อมูล · Segment</div>
+            <h3>แบ่งกลุ่มผู้เข้าร่วมจาก JSON</h3>
+            <pre><code>คุณคือผู้ช่วยวิเคราะห์ข้อมูลผู้เข้าปฏิบัติธรรมของวัดไทยในญี่ปุ่น
+ให้วิเคราะห์โดยไม่เปิดเผยชื่อบุคคล และไม่อ้างถึงเรื่องส่วนตัวละเอียดอ่อนในข้อความสื่อสาร
+
+จากข้อมูล JSON นี้ ช่วยแบ่งผู้เข้าร่วมชาวญี่ปุ่นเป็น segment:
+1. One-time Japanese: มา 1 ครั้ง
+2. New Recent Japanese: มาไม่เกิน 2 ครั้ง และ last_visit ภายใน 90 วัน
+3. Lapsed Repeat Japanese: มา 2 ครั้งขึ้นไป แต่ last_visit เกิน 180 วัน
+4. Core Active Japanese: มา 6 ครั้งขึ้นไป และ last_visit ภายใน 90 วัน
+5. Deep Practitioner: มา 6 ครั้งขึ้นไป แต่ไม่ได้ active ภายใน 90 วัน
+
+สำหรับแต่ละ segment ขอ:
+- จำนวนคน
+- insight หลักจาก reviews
+- friction ที่น่าจะมี
+- action ที่ทีมวัดควรทำใน 7 วัน
+- ข้อความ follow-up ภาษาญี่ปุ่น 2 แบบ
+
+ข้อมูล:
+[วาง JSON ที่ตัดข้อมูลส่วนตัวแล้ว]</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="data">
+            <div class="prompt-meta">วิเคราะห์ข้อมูล · Content Angle</div>
+            <h3>หาแนวสื่อจากรีวิว</h3>
+            <pre><code>ช่วยวิเคราะห์ review text ของผู้เข้าร่วมคอร์สปฏิบัติธรรมชาวญี่ปุ่น
+
+ขอผลลัพธ์:
+1. หัวข้อที่ผู้เข้าร่วมพูดถึงบ่อยที่สุด
+2. สิ่งที่ทำให้ประทับใจ
+3. สิ่งที่ทำให้กังวลหรือยาก
+4. ภาษาที่ควรใช้ในโพสต์ประชาสัมพันธ์
+5. FAQ ที่ควรเพิ่มบนหน้าเว็บ
+6. ตัวอย่างโพสต์ภาษาญี่ปุ่น 5 โพสต์
+
+ข้อกำหนด:
+- อย่าเปิดเผยชื่อบุคคล
+- อย่าใช้เรื่องส่วนตัวละเอียดอ่อนเป็นข้อความชวน
+- ใช้ insight แบบ aggregate เท่านั้น
+
+Review text:
+[วาง review text ที่ anonymized แล้ว]</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="data">
+            <div class="prompt-meta">วิเคราะห์ข้อมูล · Reactivation</div>
+            <h3>ชวนคนเก่ากลับมา</h3>
+            <pre><code>ช่วยเขียนข้อความภาษาญี่ปุ่นสำหรับชวนผู้ที่เคยมาปฏิบัติธรรมหลายครั้ง
+แต่ไม่ได้กลับมานานกว่า 180 วัน
+
+บริบท:
+- วัดไทยในญี่ปุ่น
+- คอร์สเป็น weekend meditation retreat
+- ต้องการชวนกลับมาอย่างอบอุ่น ไม่กดดัน
+- insight จากรีวิวคือหลายคนชอบความสบาย ความสงบ ธรรมชาติ และบรรยากาศของวัด
+
+ขอ 3 เวอร์ชัน:
+1. สั้นมากสำหรับ LINE
+2. กลางสำหรับอีเมลหรือข้อความส่วนตัว
+3. เวอร์ชันชวนมาคอร์สพิเศษหรือ theme retreat
+
+ห้ามใช้ถ้อยคำที่ทำให้รู้สึกผิดที่ไม่ได้มา</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="data">
+            <div class="prompt-meta">วิเคราะห์ข้อมูล · Second Visit</div>
+            <h3>ชวนกลับมาครั้งที่ 2</h3>
+            <pre><code>ช่วยเขียนข้อความภาษาญี่ปุ่นสำหรับผู้ที่มาคอร์สปฏิบัติธรรมครั้งแรกแล้ว
+เพื่อชวนให้กลับมาครั้งที่ 2
+
+เป้าหมาย:
+- ทำให้รู้สึกว่าการกลับมาครั้งที่ 2 เป็นการฝึกต่ออย่างเป็นธรรมชาติ
+- ไม่กดดัน
+- ชวนให้ฝึกต่อที่บ้านวันละ 5 นาที
+- เชิญกลับมาวัดเมื่อพร้อม
+
+ขอ:
+1. ข้อความวันที่ 1 หลังจบคอร์ส
+2. ข้อความวันที่ 7
+3. ข้อความวันที่ 14
+4. ข้อความวันที่ 30
+5. แบบฝึกสมาธิสั้น ๆ สำหรับแต่ละข้อความ</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="retreat">
+            <div class="prompt-meta">ปฏิบัติธรรมญี่ปุ่น · แผน 7 วัน</div>
+            <h3>หาผู้เข้าร่วมให้ถึง 30 คน</h3>
+            <pre><code>ช่วยวางแผนหาผู้เข้าร่วมคอร์สปฏิบัติธรรมชาวญี่ปุ่นสุดสัปดาห์นี้
+เป้าหมายคือ 30 คน แต่บางสัปดาห์มีผู้เข้าร่วมน้อยกว่า 10 คน
+
+ขอแผน 7 วัน แยกเป็น:
+1. การชวนคนเก่าจากฐานข้อมูล
+2. การหาคนใหม่ผ่านเว็บไซต์ Instagram Facebook LINE
+3. ข้อความสำหรับคนที่เคยมาแล้ว
+4. ข้อความสำหรับคนที่ยังไม่เคยมา
+5. สิ่งที่ควรติดตามหลังจบคอร์ส
+
+น้ำเสียงภาษาญี่ปุ่นสุภาพ อบอุ่น ไม่กดดัน</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="retreat">
+            <div class="prompt-meta">ปฏิบัติธรรมญี่ปุ่น · คนเก่า</div>
+            <h3>แบ่งกลุ่มจากฐานข้อมูล</h3>
+            <pre><code>ช่วยแบ่งกลุ่มผู้เคยเข้าคอร์สปฏิบัติธรรมชาวญี่ปุ่นจากข้อมูลต่อไปนี้
+ออกเป็น 4 กลุ่ม:
+1. มาใหม่ครั้งเดียว
+2. เคยมาหลายครั้งแต่หายไป
+3. มาสม่ำเสมอ
+4. น่าจะชวนเพื่อนมาได้
+
+สำหรับแต่ละกลุ่ม ช่วยเสนอข้อความติดตามภาษาญี่ปุ่นแบบสุภาพ อบอุ่น ไม่กดดัน
+และเสนอวิธีชวนกลับมาร่วมคอร์สสุดสัปดาห์</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="retreat">
+            <div class="prompt-meta">ปฏิบัติธรรมญี่ปุ่น · FAQ</div>
+            <h3>ลดความกังวลก่อนสมัคร</h3>
+            <pre><code>ช่วยทำ FAQ ภาษาญี่ปุ่นสำหรับคนที่ไม่เคยมาวัดไทย
+และกำลังสนใจคอร์สปฏิบัติธรรมสุดสัปดาห์
+
+ให้ครอบคลุม:
+ภาษา, ศาสนา, การพักค้าง, อาหาร, เสื้อผ้า, ตารางปฏิบัติ, ค่าใช้จ่าย,
+การเดินทาง, มือใหม่ทำสมาธิได้ไหม, ต้องทำพิธีกรรมหรือไม่
+
+น้ำเสียงอบอุ่น ชัดเจน ไม่ทำให้รู้สึกถูกบังคับ</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="retreat">
+            <div class="prompt-meta">ปฏิบัติธรรมญี่ปุ่น · Follow-up</div>
+            <h3>ติดตามหลังจบ 30 วัน</h3>
+            <pre><code>ช่วยออกแบบระบบติดตามผู้เข้าคอร์สปฏิบัติธรรมชาวญี่ปุ่นหลังจบกิจกรรม
+เป้าหมายคือให้เขารู้สึกได้รับการดูแล ฝึกต่อที่บ้านได้ และอยากกลับมาอีก
+
+ขอเป็นแผน 30 วัน แบ่งเป็นข้อความวันที่ 1, 3, 7, 14, 30
+พร้อมแบบฝึกสมาธิสั้น ๆ ที่ทำได้ในชีวิตประจำวัน
+น้ำเสียงภาษาญี่ปุ่นสุภาพ อบอุ่น ไม่กดดัน</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="retreat">
+            <div class="prompt-meta">ปฏิบัติธรรมญี่ปุ่น · ภาษาญี่ปุ่น</div>
+            <h3>ตรวจสำนวนญี่ปุ่น</h3>
+            <pre><code>ช่วยตรวจและปรับภาษาญี่ปุ่นต่อไปนี้
+ให้สุภาพ อ่อนโยน เป็นธรรมชาติสำหรับชาวญี่ปุ่น
+บริบทคือข้อความจากวัดไทยเชิญร่วมคอร์สปฏิบัติธรรม
+
+ขอให้:
+1. ปรับสำนวนให้เป็นธรรมชาติ
+2. ชี้จุดที่อาจฟังดูแข็งหรือกดดัน
+3. เสนอ 2 เวอร์ชัน: เป็นกันเอง และทางการ
+
+ข้อความ:
+[วางข้อความที่นี่]</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="stupa">
+            <div class="prompt-meta">เจดีย์ · เรื่องเล่าหลัก</div>
+            <h3>เล่าโครงการ 3 ระดับ</h3>
+            <pre><code>ช่วยเขียนเรื่องเล่าหลักของโครงการสร้างเจดีย์
+บริบทคือวัดไทยในญี่ปุ่น ต้องการสร้างเจดีย์ให้เสร็จภายใน 1 ปี
+ยังต้องระดมทุนเพิ่ม 30 ล้านบาท กลุ่มหลักคือญาติโยมชาวไทย
+
+ขอ 3 เวอร์ชัน:
+1. สั้นสำหรับ LINE
+2. กลางสำหรับ Facebook
+3. ยาวสำหรับหน้าเว็บไซต์หรือเอกสารโครงการ
+
+น้ำเสียงจริงใจ อนุโมทนา โปร่งใส ไม่กดดัน
+เน้นความหมายของเจดีย์ ประโยชน์ต่อพระพุทธศาสนา และการมีส่วนร่วมของญาติโยม</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="stupa">
+            <div class="prompt-meta">เจดีย์ · ทอดผ้าป่า</div>
+            <h3>แคมเปญ 4 สัปดาห์ก่อนงาน</h3>
+            <pre><code>ช่วยวางแผนแคมเปญประชาสัมพันธ์งานทอดผ้าป่าเพื่อสร้างเจดีย์
+ระยะเวลา 4 สัปดาห์ก่อนถึงวันงาน
+เป้าหมายคือเชิญญาติโยมชาวไทยร่วมบุญสร้างเจดีย์
+ยังต้องระดมทุนอีก 30 ล้านบาทภายใน 1 ปี
+
+ขอแผนรายสัปดาห์ พร้อม:
+1. ธีมการสื่อสาร
+2. โพสต์ Facebook
+3. ข้อความ LINE
+4. ข้อความเชิญชวนแบบสั้น
+5. ข้อความอนุโมทนาหลังร่วมบุญ
+
+น้ำเสียงจริงใจ โปร่งใส อบอุ่น ไม่กดดัน</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="stupa">
+            <div class="prompt-meta">เจดีย์ · รายงาน</div>
+            <h3>รายงานความคืบหน้ารายเดือน</h3>
+            <pre><code>ช่วยทำรายงานความคืบหน้าโครงการสร้างเจดีย์ประจำเดือน
+สำหรับญาติโยมที่ร่วมบุญและผู้สนใจ
+
+แบ่งเป็น:
+1. สิ่งที่ทำเสร็จแล้ว
+2. สิ่งที่กำลังดำเนินการ
+3. สิ่งที่ต้องเตรียมต่อไป
+4. ยอดระดมทุนล่าสุดและเป้าหมายที่เหลือ
+5. คำอนุโมทนาผู้ร่วมสนับสนุน
+
+น้ำเสียงโปร่งใส อบอุ่น และน่าเชื่อถือ</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="stupa">
+            <div class="prompt-meta">เจดีย์ · ภาพและแบบ</div>
+            <h3>เขียนคำบรรยายจากภาพหน้างาน</h3>
+            <pre><code>ช่วยเขียนคำบรรยายภาพสำหรับอัปเดตโครงการสร้างเจดีย์
+ภาพนี้แสดง: [อธิบายภาพหรือความคืบหน้าหน้างาน]
+
+ขอ 3 แบบ:
+1. สั้นสำหรับ LINE
+2. กลางสำหรับ Facebook
+3. คำบรรยายแบบรายงาน
+
+เน้นความคืบหน้า ความโปร่งใส และการอนุโมทนาญาติโยม
+ไม่ใช้ถ้อยคำกดดันเรื่องการบริจาค</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="ops">
+            <div class="prompt-meta">บริหารงาน · ประชุม</div>
+            <h3>สรุปประชุมเป็นงานที่ต้องทำ</h3>
+            <pre><code>ช่วยแปลงบันทึกการคุยงานนี้ให้เป็นตารางติดตามงาน
+แยกเป็น: งาน / ผู้รับผิดชอบ / กำหนดเสร็จ / สถานะ / คำถามที่ยังค้าง
+
+ถ้ามีจุดที่ข้อมูลไม่ชัด ให้ใส่ไว้ในหัวข้อ “ต้องถามเพิ่ม”
+
+บันทึกการคุยงาน:
+[วางข้อความจาก LINE หรือบันทึกประชุมที่นี่]</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="ops">
+            <div class="prompt-meta">บริหารงาน · ติดตาม</div>
+            <h3>เขียนข้อความตามงานแบบสุภาพ</h3>
+            <pre><code>ช่วยเขียนข้อความติดตามงานแบบสุภาพและไม่กดดัน
+บริบทคือทีมงานวัดกำลังช่วยกันทำงาน
+
+งานที่ต้องติดตาม:
+[ใส่งานที่ต้องติดตาม]
+
+ขอ 3 เวอร์ชัน:
+1. สั้นมากสำหรับ LINE
+2. อบอุ่นสำหรับอาสาสมัคร
+3. ชัดเจนสำหรับผู้รับผิดชอบหลัก</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+
+          <article class="prompt-card" data-category="ops">
+            <div class="prompt-meta">บริหารงาน · แบ่งบทบาท</div>
+            <h3>ทำระบบเจ้าของงาน</h3>
+            <pre><code>ช่วยออกแบบ role การทำงานสำหรับทีมวัดที่ “ช่วย ๆ กันทำ”
+แต่ต้องการให้ 2 ภารกิจเดินต่อเนื่อง:
+1. คอร์สปฏิบัติธรรมชาวญี่ปุ่น
+2. ระดมทุนสร้างเจดีย์
+
+ขอเป็นตาราง:
+บทบาท / หน้าที่รายสัปดาห์ / สิ่งที่ต้องส่งต่อ / prompt ที่ควรใช้ / ตัวชี้วัด</code></pre>
+            <button class="copy-button" type="button">คัดลอก</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section care" id="care">
+        <div class="section-heading">
+          <p class="eyebrow">ใช้อย่างมีสติ</p>
+          <h2>AI ช่วยร่าง ช่วยจัดระบบ แต่คนในวัดรับผิดชอบคำสุดท้าย</h2>
+        </div>
+        <div class="care-grid">
+          <article>
+            <h3>ตรวจภาษาและธรรมะ</h3>
+            <p>ข้อความญี่ปุ่นและเนื้อหาธรรมะควรมีผู้รู้ตรวจ โดยเฉพาะคำศัพท์ที่อาจแปลได้หลายแบบ</p>
+          </article>
+          <article>
+            <h3>ลดข้อมูลส่วนตัว</h3>
+            <p>เมื่อนำข้อความจากฐานข้อมูลหรือ LINE ไปใช้ ให้ตัดชื่อ เบอร์ ที่อยู่ และรายละเอียดระบุตัวตนออกเท่าที่ทำได้</p>
+          </article>
+          <article>
+            <h3>อย่าเชื่อทันที</h3>
+            <p>ให้ถามต่อ ขอทางเลือก เปรียบเทียบ และตรวจความจริงก่อนนำไปเผยแพร่หรือส่งถึงญาติโยม</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>AI Temple Playbook · เวอร์ชันเริ่มต้นสำหรับใช้งานภายใน</p>
+      <a href="#top">กลับขึ้นด้านบน</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite">คัดลอก prompt แล้ว</div>
+    <script src="script.js"></script>
+  </body>
+</html>
